@@ -159,8 +159,8 @@ def main():
 
         with st.expander("Endpoint Connection", expanded=True):
             enable_connection = st.checkbox("Enable Connection", value=True)
-            morph_kernel = st.slider("Dilation Kernel", 5, 35, 19, step=2)
-            line_thickness = st.slider("Line Thickness", 1, 15, 5)
+            morph_kernel = st.slider("Dilation Kernel", 5, 35, 5, step=2)
+            line_thickness = st.slider("Line Thickness", 1, 15, 1)
 
         with st.expander("Advanced: Color (HSV)", expanded=False):
             hsv_settings = {'h1_max': 25, 'h2_min': 95, 's_min': 0, 'v_min': 0}
@@ -299,4 +299,5 @@ def main():
             st.divider()
 
 if __name__ == "__main__":
+
     main()
